@@ -21,6 +21,8 @@ bot = commands.Bot(command_prefix='!')
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="you."))
+
 
 @bot.command(name='meat', help='I\'ll reply with a nugget of wisdom.')
 async def ron_swanson(ctx):
