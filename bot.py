@@ -59,11 +59,11 @@ async def ron_swanson(ctx, *, person):
     if (person.lower() == 'ruru'):
         user = await bot.fetch_user(RURU_ID)
         await user.send("Saifa is booping you!")
-        await ctx.send("I booped her.")
+        await ctx.send("I booped him.")
     elif (person.lower() == 'saifa'):
         user = await bot.fetch_user(SAIFA_ID)
         await user.send("Ruru is booping you!")
-        await ctx.send("I booped him.")
+        await ctx.send("I booped her.")
     else:
         await ctx.send("Sorry, I can't boop that person.")
 
